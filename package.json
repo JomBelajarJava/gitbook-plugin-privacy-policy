@@ -1,5 +1,5 @@
 {
-  "name": "privacy-policy",
+  "name": "gitbook-plugin-privacy-policy",
   "version": "0.0.1",
     "description": "Privacy policy popup for Jom Belajar Java website",
     "author": "Burhanuddin Baharuddin",
@@ -7,9 +7,9 @@
     "engines": {
         "gitbook": ">=3.x.x"
     },
-    "homepage": "https://github.com/JomBelajarJava/privacy-policy",
+    "homepage": "https://github.com/JomBelajarJava/gitbook-plugin-privacy-policy",
     "repository": {
         "type": "git",
-        "url": "https://github.com/JomBelajarJava/privacy-policy.git"
+        "url": "https://github.com/JomBelajarJava/gitbook-plugin-privacy-policy.git"
     }
 }
