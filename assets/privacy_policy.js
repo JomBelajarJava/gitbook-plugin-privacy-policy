@@ -1,6 +1,10 @@
 require(['gitbook'], function(gitbook) {
+    var showPolicy = function() {
+        document.getElementById('policy').style.display = 'block';
+    };
+
     var hidePolicy = function(evt) {
-        if (evt) { evt.preventDefault(); }
+        evt.preventDefault();
 
         localStorage.setItem('hasAgreedPolicy', true);
         document.getElementById('policy').style.display = 'none';
@@ -11,8 +15,8 @@ require(['gitbook'], function(gitbook) {
             .getElementById('agree-policy')
             .addEventListener('click', hidePolicy);
 
-        if (localStorage.getItem('hasAgreedPolicy')) {
-            hidePolicy();
+        if (!localStorage.getItem('hasAgreedPolicy')) {
+            showPolicy();
         }
     });
 });
